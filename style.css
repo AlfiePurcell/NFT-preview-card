@@ -3,6 +3,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    transition: all ease-in 0.5s
 }
 body{
     font-family: "Outfit", sans-serif;
@@ -22,6 +23,7 @@ max-width: 350px;
     background-color: hsl(216, 50%, 16%);
     border-radius: 15px;
     box-shadow: 0px 0px 30px 5px rgba(0,0,0,0.75);
+    box-shadow: 12px 7px 20px 6px rgb(57 75 84 / 8%);
 }
 .img-top{
     position: relative;
@@ -104,4 +106,13 @@ hr{
 }
 .author p a.name:hover{
     color: hsl(178, 100%, 50%);
+}
+@media (max-width: 350px) {
+    .flex {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 25px 0;
+        flex-direction: column;
+    }
 }
